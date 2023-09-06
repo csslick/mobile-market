@@ -1,0 +1,76 @@
+@import url(reset.css);
+@import url(var.css);
+
+address {
+  color: #999;
+  font-style: normal;
+}
+
+nav.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.top-nav li a img {
+  width: 32px;
+}
+
+.product-list { padding: 15px; }
+.product-list h2 { 
+  font-size: 20px; 
+  font-weight: normal;
+}
+
+.product-list > li { 
+  padding: 15px 0; 
+  border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
+.product-list > li > a {
+  display: flex;
+  gap: 1rem;
+}
+
+.product-list > li img {
+  width: 30vw;
+}
+
+.product-list .info  {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.product-list .info .price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.product-list .info .like {
+  text-align: right;
+}
+
+.product-list .info .like img { width: 32px;}
+
+.bottom-nav { 
+  padding: 10px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: var(--bg-color);
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.bottom-nav ul li img { width: 32px; }
+.bottom-nav ul { display: flex; }
+.bottom-nav ul li {
+  flex: 1;
+  text-align: center;
+  font-size: small;
+}
