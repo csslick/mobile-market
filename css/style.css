@@ -61,10 +61,12 @@ nav ul li {
 .bottom-nav { 
   padding: 10px 0;
   position: fixed;
-  left: 0;
+  width: 100%;
+  max-width: 768px;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
   background: var(--bg-color);
-  width: 100%;
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 .bottom-nav ul li img { width: 32px; }
